@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="mean texture <= 19.315\ngini = 0.466\nsamples = 455\nvalue = [168, 287]\nclass = benign", fillcolor="#add6f4"] ;
+1 [label="mean symmetry <= 0.209\ngini = 0.277\nsamples = 253\nvalue = [42, 211]\nclass = benign", fillcolor="#60b1ea"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="mean texture <= 16.675\ngini = 0.225\nsamples = 224\nvalue = [29, 195]\nclass = benign", fillcolor="#56ace9"] ;
+1 -> 2 ;
+3 [label="gini = 0.094\nsamples = 122\nvalue = [6, 116]\nclass = benign", fillcolor="#43a2e6"] ;
+2 -> 3 ;
+4 [label="gini = 0.349\nsamples = 102\nvalue = [23, 79]\nclass = benign", fillcolor="#73baed"] ;
+2 -> 4 ;
+5 [label="mean texture <= 15.52\ngini = 0.495\nsamples = 29\nvalue = [13, 16]\nclass = benign", fillcolor="#daedfa"] ;
+1 -> 5 ;
+6 [label="gini = 0.298\nsamples = 11\nvalue = [2, 9]\nclass = benign", fillcolor="#65b3eb"] ;
+5 -> 6 ;
+7 [label="gini = 0.475\nsamples = 18\nvalue = [11, 7]\nclass = malignant", fillcolor="#f6d1b7"] ;
+5 -> 7 ;
+8 [label="mean symmetry <= 0.188\ngini = 0.469\nsamples = 202\nvalue = [126, 76]\nclass = malignant", fillcolor="#f5cdb0"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="mean symmetry <= 0.142\ngini = 0.5\nsamples = 121\nvalue = [60, 61]\nclass = benign", fillcolor="#fcfdff"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 7\nvalue = [0, 7]\nclass = benign", fillcolor="#399de5"] ;
+9 -> 10 ;
+11 [label="gini = 0.499\nsamples = 114\nvalue = [60, 54]\nclass = malignant", fillcolor="#fcf2eb"] ;
+9 -> 11 ;
+12 [label="mean texture <= 20.805\ngini = 0.302\nsamples = 81\nvalue = [66, 15]\nclass = malignant", fillcolor="#eb9e66"] ;
+8 -> 12 ;
+13 [label="gini = 0.444\nsamples = 21\nvalue = [14, 7]\nclass = malignant", fillcolor="#f2c09c"] ;
+12 -> 13 ;
+14 [label="gini = 0.231\nsamples = 60\nvalue = [52, 8]\nclass = malignant", fillcolor="#e99457"] ;
+12 -> 14 ;
+}
